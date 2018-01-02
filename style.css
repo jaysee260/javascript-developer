@@ -1,0 +1,231 @@
+/* General Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* *********/
+
+/* Container Settings */
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* font-size: 2em; */
+}
+
+.wrapper > div:nth-last-child(even) {
+  background: #333333;
+  color: #fff;
+}
+
+.wrapper > div:nth-last-child(odd) {
+  color: #333333;
+}
+
+/* ********** */
+/* Standard Settings */
+
+.content {
+  padding: 1em;
+}
+
+.title {
+  font-size: 2.5em;
+  padding: .75em;
+  letter-spacing: 3px;
+}
+
+.js {
+  background-color: #f7df1e;
+  color: #000;
+  border: 2px solid #333;
+  padding: .20em;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.npm {
+  background-color: #cb3837;
+  border: 2px solid #cb3837;
+  color: #fff;
+  padding: .15em;
+  font-weight: bold;
+  letter-spacing: 2.25px;
+  border-radius: 3px;
+}
+
+.node {
+  background-color: #44883e;
+  border: 2px solid #333;
+  color: #fff;
+  padding: .20em;
+  font-weight: bold;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.link {
+  text-decoration: none;
+  color: #44883e;
+  font-weight: bold;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: #44883e;
+  font-weight: bold;
+}
+
+/* ***** */
+/* Header */
+
+.header {
+  grid-column: 1 / -1;
+  min-height: 420px;
+  font-size: 2em;
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #44883e;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: .75em;
+  margin-top: 1em;
+  letter-spacing: 2px;
+}
+
+/* ****** */
+/* About Me  */
+
+.about-me {
+  grid-column: 1 / -1;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.about-me p {
+  margin: 1em;
+}
+
+/* ********* */
+/* Skills */
+
+.skills {
+  grid-column: 1 / -1;
+}
+
+.skillset {
+  margin: 1.5em;
+}
+
+.skillset .skillset-title {
+  padding: .5em;
+  font-size: 2em;
+  color: #fff;
+  background-color: #44883e;
+}
+
+.skillset .skillset-body {
+  letter-spacing: 1px;
+  background-color: #fff;
+  color: #333;
+  padding: 1em;
+}
+
+ul li {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+/* ******* */
+
+.portfolio {
+  grid-column: 1 / -1;
+  height: 20em;
+}
+
+.portfolio p.message {
+  font-size: 3.5em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #44883e;
+  /* background: #44883e; */
+  padding: .5em;
+  border-radius: 10px;
+}
+
+/* ******** */
+
+.contact {
+  grid-column: 1 / -1;
+}
+
+.contact ul li {
+  letter-spacing: 1px;
+  display: inline-block;
+  font-size: 3.5em;
+  padding-right: .25em;
+  padding-left: .25em;
+
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact ul li a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ******** */
+
+.footer {
+  grid-column: 1 / -1;
+  background: #000;
+}
+
+.footer .content p {
+  color: #fff;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.footer .content span {
+  color: #fff;
+  font-size: 10px;
+}
+
+
+/* Media Queries */
+@media(min-width: 700px) {
+  .content {
+    width: 70%;
+    font-size: 1.25em;
+  }
+  .about-me {
+    grid-column: 2 / 12;
+    font-size: 1.25em;
+    line-height: 1.75em;
+  };
+
+}

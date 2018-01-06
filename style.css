@@ -96,7 +96,7 @@ html, body {
 
 .header {
   grid-column: 1 / -1;
-  min-height: 420px;
+  min-height: 440px;
   font-size: 2em;
 }
 
@@ -152,6 +152,10 @@ a.btn {
 ul li {
   list-style: none;
   line-height: 1.5em;
+}
+
+ul li:before {
+  content: "• ";
 }
 
 /* ******* */

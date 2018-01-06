@@ -232,6 +232,14 @@ ul li:before {
     font-size: 1.25em;
     line-height: 40px;
   }
+
+  /* .flex-content {
+    display: flex;
+  }
+
+  .skillset {
+    flex: 1;
+  } */
 }
 
 @media screen and (min-width: 1001px) {
@@ -243,5 +251,13 @@ ul li:before {
     grid-column: 3 / 11;
     font-size: 1.25em;
     line-height: 40px;
+  }
+
+  .flex-content {
+    display: flex;
+  }
+
+  .skillset {
+    flex: 1;
   }
 }

@@ -154,6 +154,7 @@ ul li {
   line-height: 1.5em;
 }
 
+/* Only add this to the li's in the skillset section */
 .skillset ul li:before {
   content: "• ";
 }
@@ -232,14 +233,6 @@ ul li {
     font-size: 1.25em;
     line-height: 40px;
   }
-
-  /* .flex-content {
-    display: flex;
-  }
-
-  .skillset {
-    flex: 1;
-  } */
 }
 
 @media screen and (min-width: 1001px) {

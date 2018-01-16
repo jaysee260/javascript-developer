@@ -23,7 +23,7 @@
 */
 .fade-in3 {
     animation: fadeIn 1.5s ease-in;
-    animation-delay: 1.75s;
+    animation-delay: 1.70s;
 }
 
 @keyframes fadeIn {

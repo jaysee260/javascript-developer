@@ -7,7 +7,7 @@ window.addEventListener('load', function(){
     setTimeout(function() {
         let elems = document.querySelectorAll('.fade-in3');
         for (let i = 0; i < elems.length; i++) {
-        elems[i].classList.remove('hidden');
+            elems[i].classList.remove('hidden');
         }
     }, 1750);
 })

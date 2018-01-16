@@ -1,4 +1,4 @@
-/* General Settings */
+/* Document Settings */
 
 * {
   margin: 0;
@@ -9,6 +9,8 @@ html, body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  /* This white is a little easier on the eyes */
+  background: #eee;
 }
 
 /* *********/
@@ -25,7 +27,6 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* font-size: 2em; */
 }
 
 .wrapper > div:nth-last-child(even) {
@@ -34,20 +35,102 @@ html, body {
 }
 
 .wrapper > div:nth-last-child(odd) {
+  /* background: #eee; */
   color: #333333;
 }
 
 /* ********** */
-/* Standard Settings */
+/* General Settings */
 
 .content {
   padding: 1em;
+  user-select: none;
 }
 
 .title {
   font-size: 2.5em;
   padding: .75em;
   letter-spacing: 3px;
+  font-family: Courier New, Courier, monospace;
+}
+
+.link {
+  text-decoration: none;
+  color: #44883e;
+  font-weight: bold;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: #44883e;
+  font-weight: bold;
+}
+
+/* These are the shadows used in the banner
+  button(s), the skillset and project cards */
+.shadow {
+  /* Add shadows to create the "depth" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.25s;
+}
+
+/* On mouse-over or click, add a deeper shadow */
+.shadow:hover,
+.shadow:active {
+  box-shadow: 0 10px 18px 0 rgba(0,0,0,0.3);
+}
+
+/* ***** */
+/* HEADER */
+
+.header {
+  grid-column: 1 / -1;
+  min-height: 680px;
+  font-size: 2em;
+}
+
+.header hr {
+  border: none;
+  height: 3px;
+  background-color: #f7df1e;
+  margin: 10px 10px;
+}
+
+.header h5 {
+  font-style: italic;
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #44883e;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: .3em;
+  margin-top: 1em;
+  letter-spacing: 1px;
+  font-family: Courier New, Courier, monospace;
+}
+
+/* ****** */
+/* ABOUT ME  */
+
+.about-me {
+  grid-column: 1 / -1;
+  font-size: 1em;
+  line-height: 28px;
+}
+
+.headshot {
+  border-radius: 50%;
+  /* For small screen */
+  width: 145px;
+  height: 135px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+}
+
+.about-me p {
+  margin: 1em;
 }
 
 .js {
@@ -79,53 +162,8 @@ html, body {
   letter-spacing: 1px;
 }
 
-.link {
-  text-decoration: none;
-  color: #44883e;
-  font-weight: bold;
-}
-
-.link:visited {
-  text-decoration: none;
-  color: #44883e;
-  font-weight: bold;
-}
-
-/* ***** */
-/* Header */
-
-.header {
-  grid-column: 1 / -1;
-  min-height: 440px;
-  font-size: 2em;
-}
-
-a.btn {
-  text-decoration: none;
-  display: inline-block;
-  background-color: #44883e;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: .75em;
-  margin-top: 1em;
-  letter-spacing: 2px;
-}
-
-/* ****** */
-/* About Me  */
-
-.about-me {
-  grid-column: 1 / -1;
-  font-size: 1em;
-  line-height: 28px;
-}
-
-.about-me p {
-  margin: 1em;
-}
-
 /* ********* */
-/* Skills */
+/* SKILLS */
 
 .skills {
   grid-column: 1 / -1;
@@ -134,14 +172,7 @@ a.btn {
 .skillset {
   margin: 1.5em;
   background-color: #fff;
-  /* Add shadows to create the "card" effect */
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); */
   transition: 0.3s;
-}
-
-.skillset:hover,
-.skillset:active {
-  /* box-shadow: 0 10px 18px 0 rgba(0,0,0,0.3); */
 }
 
 .skillset .skillset-title {
@@ -170,6 +201,7 @@ ul li {
 }
 
 /* ******* */
+/* PORTFOLIO */
 
 .portfolio {
   grid-column: 1 / -1;
@@ -182,23 +214,14 @@ ul li {
   font-weight: bold;
   letter-spacing: 2px;
   color: #44883e;
-  /* background: #44883e; */
   padding: .5em;
   border-radius: 10px;
 }
 
 .project {
-  /* Add shadows to create the "card" effect */
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); */
   transition: 0.3s;
   background-color: #44883e;
   margin: 2em;
-}
-
-/* On mouse-over, add a deeper shadow */
-.project:hover,
-.project:active {
-  /* box-shadow: 0 10px 18px 0 rgba(0,0,0,0.3); */
 }
 
 .project img {
@@ -213,19 +236,8 @@ ul li {
   font-size: 25px;
 }
 
-.shadow {
-  /* Add shadows to create the "depth" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-  transition: 0.25s;
-}
-
-/* On mouse-over or click, add a deeper shadow */
-.shadow:hover,
-.shadow:active {
-  box-shadow: 0 10px 18px 0 rgba(0,0,0,0.3);
-}
-
 /* ******** */
+/* CONTACT */
 
 .contact {
   grid-column: 1 / -1;
@@ -251,6 +263,7 @@ ul li {
 }
 
 /* ******** */
+/* FOOTER */
 
 .footer {
   grid-column: 1 / -1;
@@ -272,14 +285,23 @@ ul li {
 /* Media Queries */
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .content {
-    /* width: 80%; */
     font-size: 1.15em;
+  }
+
+  .header {
+    min-height: 450px;
   }
 
   .about-me {
     grid-column: 2 / 12;
     font-size: 1.25em;
     line-height: 40px;
+  }
+
+  .headshot {
+    /* For larger screen */
+    width: 210px;
+    height: 200px;
   }
 }
 
@@ -288,16 +310,30 @@ ul li {
     font-size: 1.15em;
   }
 
+  .flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header {
+    min-height: 450px;
+  }
+
+  .content .title {
+    font-size: 2.5em;
+  }
+
   .about-me {
     grid-column: 3 / 11;
     font-size: 1.25em;
     line-height: 40px;
   }
 
-  .flex-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .headshot {
+    /* For larger screen */
+    width: 240px;
+    height: 220px;
   }
 
   .skillset {

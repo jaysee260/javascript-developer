@@ -9,5 +9,5 @@ window.addEventListener('load', function(){
         for (let i = 0; i < elems.length; i++) {
             elems[i].classList.remove('hidden');
         }
-    }, 1750);
+    }, 1800);
 })

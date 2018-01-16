@@ -283,6 +283,23 @@ ul li {
 
 
 /* Media Queries */
+
+/* For Mobile Devices with larger screens (iPhone X not included) */
+@media screen and (max-width: 420px) and (min-width: 412px) {
+  .header {
+    min-height: 745px;
+  }
+}
+
+/* Just for iPhone X */
+@media screen and (min-width: 374px) and (min-height: 811px) and
+(max-width:375px) and (max-height:812px) {
+  .header {
+    min-height: 815px;
+  }
+}
+
+/* For screens between 1000 and 700 pixels wide */
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .content {
     font-size: 1.15em;
@@ -290,6 +307,14 @@ ul li {
 
   .header {
     min-height: 450px;
+  }
+
+  /* The about-btn is only really needed
+    on mobile screens where the header takes
+    up the entire screen
+  */
+  #about-btn{
+    display: none;
   }
 
   .about-me {
@@ -305,6 +330,7 @@ ul li {
   }
 }
 
+/* For screens over 1001 pixels wide */
 @media screen and (min-width: 1001px) {
   .content {
     font-size: 1.15em;
@@ -318,6 +344,14 @@ ul li {
 
   .header {
     min-height: 450px;
+  }
+
+  /* The about-btn is only really needed
+    on mobile screens where the header takes
+    up the entire screen
+  */
+  #about-btn{
+    display: none;
   }
 
   .content .title {

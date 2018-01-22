@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>JavaScript Developer</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="effects.css"> -->
   <script src="https://use.fontawesome.com/0ba0d869d7.js"></script>
 </head>
 <body>
@@ -105,17 +104,17 @@
       <div class="portfolio">
         <div class="content">
           <h3 class="title">Portfolio</h3>
-          <p class="message">Coming soon</p>
+          <p class="message">More coming soon</p>
           <div class="flex-content">
             
-            <div class="project shadow">
+            <div page="https://github.com/jsdev17/FizzBuzz" onclick="openPage(this)" class="project shadow">
               <img src="assets/images/fb_small_400x300.png" alt="fizzbuzz">
               <div class="project-title">
                 <h4>FizzBuzz</h4>
               </div>
             </div>
 
-            <div class="project shadow">
+            <div page="https://github.com/jsdev17/calculator" onclick="openPage(this)" class="project shadow">
               <img src="assets/images/calc_small_400x300.png" alt="calculator">
               <div class="project-title">
                 <h4>Calculator</h4>
@@ -161,9 +160,13 @@
         </div>
       </div>
   </div>
+  <script>
+    function openPage(element) {
+      let page = element.getAttribute('page');
+      window.open(page, '_blank');
+    }
+  </script>
   
-
-  <script src="assets/js/effects.js"></script>
 </body>
 </html>
 
